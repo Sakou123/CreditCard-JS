@@ -1,0 +1,303 @@
+/* Credit Card */
+/* section *{
+    border: 1px solid red;
+} */
+
+body {
+    padding: 0 20%;
+}
+
+header {
+    text-align: center;
+}
+
+header>h1 {
+    font-size: 2.5em;
+    color: orangered;
+}
+
+header>p {
+    font-size: 1.5em;
+}
+
+header>p>span {
+    font-weight: bold;
+    color: green;
+}
+
+#card {
+    display: flex;
+    justify-content: center;
+}
+
+#left_section, #card_right{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#card_front {
+    flex-direction: column;
+    
+}
+
+#card_name {
+    width: 150px;
+}
+
+#card_date {
+    position: relative;
+    width: 50px;
+    right: -20px;
+}
+
+h3 {
+    margin: 0;
+}
+/* Card front */
+
+#background {
+    height: 250px;
+    width: 400px;
+    background-color: gainsboro;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    margin: 45px 0 0 0;
+}
+
+
+#card_second {
+    height: 55px;
+    display: flex;
+}
+
+#card_second_left {
+    height: 100%;
+    width: 20%;
+    background-color:rgb(175, 171, 171);
+    margin: 35px 0 20px 25px;
+    border-radius: 8px;
+}
+
+#card_second_left>div {
+    background-color:gainsboro;
+    position: relative;
+    top: 10px;
+    height: 35px;
+    margin: 0 20px 0 0;
+    border-radius: 0 8px 8px 0;
+}
+
+
+#card_code {
+    margin: 80px 0 0 0;
+    font-size: 2em;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#card_bottom {
+    position: relative;
+    right: 20px;
+}
+
+#card_number {
+    border-radius: 5px;
+}
+
+#card_owner {
+    border-radius: 5px;
+}
+
+#card_bottom>div {
+    display: flex;
+    flex-direction: row;
+}
+
+#card_bottom_bot {
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-around;
+    margin: 20px 0 0 0;
+}
+
+/* Fin Card front */
+
+
+/* Card back */
+
+#background_back {
+    height: 250px;
+    width: 400px;
+    background-color: gainsboro;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    margin: 45px 0 0 0;
+}
+
+
+#card_top_back {
+    height: 55px;
+    background-color: black;
+    margin: 30px 0 0 0;
+}
+
+#bar_cvc {
+  display:flex;
+}
+
+#card_bar_back {
+    height: 40px;
+    width: 80%;
+    background-color: white;
+    margin: 25px 0 0 8px;
+}
+
+#card_cvc {
+      margin: 25px 0 0 18px;
+      color: white;
+      font-weight: bolder;
+}
+
+#card_bottom_back>div {
+    display: flex;
+    flex-direction: row;
+}
+
+#card_bottom_back {
+    height: 55px;
+    display: flex;
+}
+
+#card_chip_back {
+    height: 100%;
+    width: 75px;
+    background-color:rgb(175, 171, 171);
+    margin: 15px 0 20px 15px;
+    border-radius: 8px;
+}
+
+ #card_chip_back>div {                       /* Front chip morceau */
+    background-color:gainsboro;
+    position: relative;
+    top: 10px;
+    height: 35px;
+    margin: 0 20px 0 0;
+    border-radius: 0 8px 8px 0;
+}
+
+#card_text_back {
+    color: white;
+    width: 250px;
+    font-size: 0.6em;
+    text-align: center;
+    margin: 15px 20px 0 25px;
+  }
+
+/* Fin card back */
+
+
+/* Form */
+
+#card_right input {
+    height: 25px;
+    padding: 0 0 0 10px;
+}
+
+#card_right>form>div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#card_right>form {
+    display: flex;
+    flex-direction: column;
+}
+
+#exp_cvc {
+    display: flex;
+    width: 99%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#labels {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#labels>div>input {
+    width: 98%;
+    padding: 0 0 0 10px;
+}
+
+#date {
+    border-radius: 5px 0 0 5px;
+}
+
+#crypt {
+    border-radius: 0 5px 5px 0;
+}
+
+#pay {
+    background-color: orangered;
+    color: white;
+    font-size: 1em;
+    border: orangered;
+    height: 40px;
+    border-radius: 8px;
+}
+
+
+/* */
+
+
+.flip-card {
+    background-color: transparent;
+    width:500px;
+    height: 300px;
+    perspective: 800px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 400px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  /* .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  } */
+  
+  .flip-card-inner {
+    transform: rotateY(0deg);
+  } 
+  
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-back {
+    transform: rotateY(-180deg);
+  }
+
+  #security {
+    left: 15%;
+
+  }
+stylecard.css
+5 Ko

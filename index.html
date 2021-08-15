@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="assets/css/style.css" type="text/css"/>
+    <script src="assets/js/script.js" defer></script>
+    <title>Instant Coding</title>
+</head>
+<body>
+    <header>
+        <h1>Paiement par carte de crédit</h1>
+        <p>Frais de transaction <span>0.00€</span></p>
+    </header>
+    <section id="card">
+        <div id="left_section">
+            <div class="flip-card">
+                <div class="flip-card-inner" id="flip">
+                    <div class="flip-card-front">
+                        <div id="card_front">
+                            <div id="background"> 
+                                <div id="card_second">
+                                    <div id="card_second_left">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div id="card_code">• • • • &nbsp; • • • • &nbsp; • • • • &nbsp; • • • •</div>
+                                <div id="card_bottom">
+                                    <div id="card_bottom_bot">
+                                        <div id="card_name"><h3 id="h3">FULL NAME</h3></div>
+                                        <div id="card_date">MM/YY</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div id="card_back">
+                            <div id="background_back"> 
+                                <div id="card_top_back">
+                                </div>
+                                <div id="bar_cvc">
+                                <div id="card_bar_back"></div>
+                                <div id="card_cvc">123</div>
+                                </div>
+                                <div id="card_bottom_back">
+                                    <div>
+                                        <div id="card_chip_back">
+                                        <div></div>
+                                        </div>
+                                        <div id="card_text_back">This card has been issued by Jesse Pollak and is licensed for anyone to use anywhere for free. It comes with no warranty. For support issues, please visit: github.com/jessepollak/card
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="security">                                                     
+                    <p>&nbsp; &nbsp; &nbsp; &nbsp;  🔒 Paiement sécurisé par HiPay SAS, 256-bit SSL</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="card_right">
+            <form>         
+                <div>
+                    <label>Numéro de la carte</label>
+                    <input id="card_number" pattern="\d{4} \d{4} \d{4} \d{4}" maxlength="19">
+                </div>
+                <div>
+                    <label>Titulaire de la carte</label>
+                    <input id="card_owner" pattern="\D{2,30} \D{2,30}" maxlength="61">
+                </div>
+                <div id="exp_cvc">
+                    <div id="labels">
+                        <div>
+                            <label>Date d'expiration</label>
+                            <input placeholder="MM / YY" id="date" pattern="(0[1-9]|1[0-2])/[0-9]{2}" maxlength="5">
+                        </div>
+                        <div>
+                            <label>Cryptogramme</label>
+                            <input placeholder="CVC" id="crypt" pattern="\d{3}" maxlength="3">
+                        </div>
+                    </div>
+                </div>
+                <button id="pay" title="MONEY MONEY MONEY" >Payer 35.49€</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
